@@ -1,0 +1,2 @@
+# nc
+my writing
