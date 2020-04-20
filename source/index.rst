@@ -12,23 +12,6 @@ Table of Contents
    mipsfall
    
 
-Alternate formats
------------------
-
-The book is also available in the following formats: 
-
-.. raw:: html
-
-    <ul>
-    <li>
-    <a href="http://jonathan2251.github.io/lbd/article.pdf">PDF</a>
-    </li>
-    <li>
-    <a href="http://jonathan2251.github.io/lbd/article.epub">ePub</a>
-    </li>
-    </ul>
-
-
 Search this website
 -------------------
 
