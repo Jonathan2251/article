@@ -15,7 +15,7 @@ MIPS的定價策略是核授權很貴，而架構授權很便宜。有能力的�
 
 擴展私有指令就走向mips的老路了,但差別是riscv是open source hardware，the supported software will grow fast!
 
-Mips在網路家電類的embedded electronic devices活的很好，但在cell phone, pc這種大量生命周期長的主市場就被arm, intel緊抓住，進不了。
+Mips在網路家電類的embedded electronic devices活的很好，但在cell phone, pc這種大量生命周期長的主市場就被arm, intel緊抓住，進不了 [#miss-cellphone]_ 。
 
 Riscv open source hardware會先改幹掉mips, 至於cell phone...只能自己猜了。
 
@@ -23,3 +23,4 @@ Riscv open source hardware會先改幹掉mips, 至於cell phone...只能自己�
 
 .. [#license] http://bbs.creaders.net/education/bbsviewer.php?trd_id=1446940&language=big5
 
+.. [#miss-cellphone] 错失智能手机时代，无力回天 https://zhuanlan.zhihu.com/p/29983481
