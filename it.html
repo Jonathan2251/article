@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>IT &#8212; Article</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/haiku.css?v=fce32b03" />
+    <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=4ae1632d" />
+    <script src="_static/documentation_options.js?v=2709fde1"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Life" href="life.html" />
+    <link rel="prev" title="Table of Contents" href="index.html" /> 
+  </head><body>
+      <div class="header" role="banner"><h1 class="heading"><a href="index.html">
+          <span>Article</span></a></h1>
+        <h2 class="heading"><span>IT</span></h2>
+      </div>
+      <div class="topnav" role="navigation" aria-label="Top">
+      
+        <p>
+        «&#160;&#160;<a href="index.html">Table of Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="life.html">Life</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content" role="main">
+        
+        
+  <section id="it">
+<span id="sec-it"></span><h1>IT<a class="headerlink" href="#it" title="Link to this heading">¶</a></h1>
+<nav class="contents local" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#why-mips-fall" id="id3">Why Mips fall</a></p></li>
+<li><p><a class="reference internal" href="#ui-ai" id="id4">未來 UI 開發會被 AI 程式產生器取代嗎？</a></p></li>
+</ul>
+</nav>
+<section id="why-mips-fall">
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Why Mips fall</a><a class="headerlink" href="#why-mips-fall" title="Link to this heading">¶</a></h2>
+<p>有人說arm mips是授權費的不同</p>
+<p>MIPS的定價策略是核授權很貴，而架構授權很便宜。有能力的公司都可以使用MIPS指令集開發自己的CPU，併且可以對指令集進行擴展，而不受限製。這種模式在短期內造成了百花齊放的效果，但從長期而言，由於允許自行擴充指令，導緻生態碎片化，相互不兼容，從而影響了開發者和使用者的熱情，這是MIPS沒落的主要原因。</p>
+<p>與MIPS相反，ARM則是核授權很便宜，架構授權很貴(據說大約每5年1億美圜)，以及每顆芯片賣出後的版稅(約售價的1~2%)。這樣即使沒有能力自己開發CPU核的公司，也能通過購買核授權來快速推出CPU產品，即使有研發能力的公司，使用現成的 ARM IP 來集成CPU，也可以大幅度降低產品開發成本和縮短開發週期。ARM 的商業模式漸漸驅逐了MIPS，併開闢和佔領了更多市場，畢竟低成本的快速的產品方案可以提高市場競爭力，MIPS因此舉步為艱 <a class="footnote-reference brackets" href="#license" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>。</p>
+<p>擴展私有指令就走向mips的老路了,但差別是riscv是open source hardware，the supported software will grow fast!</p>
+<p>Mips在網路家電類的embedded electronic devices活的很好，但在cell phone, pc這種大量生命周期長的主市場就被arm, intel緊抓住，進不了 <a class="footnote-reference brackets" href="#miss-cellphone" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a> 。</p>
+<p>Riscv open source hardware會先改幹掉mips, 至於cell phone…只能自己猜了。</p>
+<p>以上私人想法。</p>
+</section>
+<section id="ui-ai">
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">未來 UI 開發會被 AI 程式產生器取代嗎？</a><a class="headerlink" href="#ui-ai" title="Link to this heading">¶</a></h2>
+<p>一個值得思考的歷史對比是：DOS 時代與 Windows GUI 時代的演進。</p>
+<p>● DOS 時代：UI Generator</p>
+<p>在 DOS PC 時代（1980s–early 1990s），其實已經有很多 <strong>程式產生器 (program generator)</strong> 或 UI 設計工具，可以透過拖拉方式設計畫面並自動產生程式碼，例如：</p>
+<ul class="simple">
+<li><p>Turbo Vision</p></li>
+<li><p>dBASE form generator</p></li>
+<li><p>FoxPro screen builder</p></li>
+</ul>
+<p>典型的開發模式是：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Design UI
+     ↓
+Generate code
+     ↓
+Developer modify
+</pre></div>
+</div>
+<p>但這種模式很快遇到幾個問題：</p>
+<ul class="simple">
+<li><p>產生的程式碼難以維護</p></li>
+<li><p>客製化能力有限</p></li>
+<li><p>UI abstraction 層級太低</p></li>
+</ul>
+<p>因此 UI generator 並沒有取代 UI 程式設計師。</p>
+<p>● Windows GUI 時代：OS Framework</p>
+<p>當 Windows / Mac GUI 作業系統出現後，情況發生很大的改變。</p>
+<p>作業系統提供完整的 GUI framework，例如：</p>
+<ul class="simple">
+<li><p>Win32 API</p></li>
+<li><p>MFC</p></li>
+<li><p>.NET / WPF</p></li>
+<li><p>Cocoa (macOS)</p></li>
+</ul>
+<p>開發模式變成：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>OS GUI Framework
+      ↓
+IDE (Visual Studio / Xcode)
+      ↓
+Developer writes logic
+</pre></div>
+</div>
+<p>IDE 仍然提供 UI designer，但主要只是輔助工具，核心程式邏輯仍然由工程師撰寫。</p>
+<p>因此 UI generator 並沒有取代 UI 開發者。</p>
+<p>● Web 時代：更高層的 UI abstraction</p>
+<p>Web UI framework 又把 abstraction 提升了一層，例如：</p>
+<ul class="simple">
+<li><p>React</p></li>
+<li><p>Angular</p></li>
+<li><p>Vue</p></li>
+</ul>
+<p>UI 開發逐漸變成 <strong>component-based architecture</strong>。</p>
+<p>例如：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">Button</span> <span class="n">onClick</span><span class="o">=</span><span class="p">{</span><span class="n">submit</span><span class="p">}</span><span class="o">&gt;</span><span class="n">Submit</span><span class="o">&lt;/</span><span class="n">Button</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>工程師主要負責：</p>
+<ul class="simple">
+<li><p>state management</p></li>
+<li><p>interaction logic</p></li>
+<li><p>application architecture</p></li>
+</ul>
+<p>真正困難的部分已經不是畫 UI，而是 <strong>系統設計與狀態管理</strong>。</p>
+<p>● AI Code Generator 的限制</p>
+<p>現在的 AI coding 工具，例如：</p>
+<ul class="simple">
+<li><p>Copilot</p></li>
+<li><p>ChatGPT</p></li>
+<li><p>Cursor</p></li>
+<li><p>Devin</p></li>
+</ul>
+<p>其實更接近 <strong>code assistant</strong>。</p>
+<p>AI 擅長的事情包括：</p>
+<ul class="simple">
+<li><p>產生 boilerplate code</p></li>
+<li><p>生成 UI layout</p></li>
+<li><p>寫 CRUD 程式</p></li>
+</ul>
+<p>但在以下方面仍然有限：</p>
+<ul class="simple">
+<li><p>大型系統 architecture</p></li>
+<li><p>跨模組 interaction</p></li>
+<li><p>performance tuning</p></li>
+<li><p>長期 maintainability</p></li>
+</ul>
+<p>真正困難的通常是 <strong>abstraction design</strong>。</p>
+<p>● 未來可能的方向：AI-aware OS / Framework</p>
+<p>未來的發展不一定是「Cloud AI 自動生成整個程式」。</p>
+<p>另一種可能是 <strong>OS 或 framework 直接內建 AI 能力</strong>。</p>
+<p>例如 OS 可能提供 AI-aware API：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">create_ui_from_spec</span><span class="p">(</span><span class="n">json</span><span class="p">)</span>
+<span class="n">generate_animation</span><span class="p">(</span><span class="n">style</span><span class="p">)</span>
+<span class="n">generate_layout</span><span class="p">(</span><span class="n">intent</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>開發者只需要描述 UI intent，例如：</p>
+<ul class="simple">
+<li><p>login screen</p></li>
+<li><p>corporate style</p></li>
+<li><p>mobile friendly</p></li>
+</ul>
+<p>framework 或 OS 再利用 AI 生成 layout 與 UI component。</p>
+<p>這其實和現在的 <strong>Declarative UI</strong> 很接近，例如：</p>
+<ul class="simple">
+<li><p>SwiftUI</p></li>
+<li><p>Jetpack Compose</p></li>
+<li><p>Flutter</p></li>
+</ul>
+<p>● 未來 UI stack 的可能架構</p>
+<p>未來 UI 系統可能演變為：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Application logic
+       ↓
+Intent UI description
+       ↓
+Framework / OS
+       ↓
+AI layout / rendering
+       ↓
+GPU
+</pre></div>
+</div>
+<p>也就是說 <strong>AI 可能存在於 framework layer，而不是完全取代 developer</strong>。</p>
+<p>這樣的設計有幾個好處：</p>
+<ul class="simple">
+<li><p>行為較 deterministic</p></li>
+<li><p>security 較好</p></li>
+<li><p>可以 version control</p></li>
+<li><p>系統架構更容易維護</p></li>
+</ul>
+<p>軟體工程的長期趨勢</p>
+<p>如果從軟體工程歷史來看，其實一直在做同一件事情：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Assembly
+  ↓
+C
+  ↓
+GUI framework
+  ↓
+Web framework
+  ↓
+Declarative UI
+  ↓
+AI-assisted development
+</pre></div>
+</div>
+<p>每一次都是在 <strong>提升 abstraction level</strong>。</p>
+<p>工程師並沒有消失，只是工作層次不斷往上移。</p>
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="license" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p><a class="reference external" href="http://bbs.creaders.net/education/bbsviewer.php?trd_id=1446940&amp;language=big5">http://bbs.creaders.net/education/bbsviewer.php?trd_id=1446940&amp;language=big5</a></p>
+</aside>
+<aside class="footnote brackets" id="miss-cellphone" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">2</a><span class="fn-bracket">]</span></span>
+<p>错失智能手机时代，无力回天 <a class="reference external" href="https://zhuanlan.zhihu.com/p/29983481">https://zhuanlan.zhihu.com/p/29983481</a></p>
+</aside>
+</aside>
+</section>
+</section>
+
+
+      </div>
+      <div class="bottomnav" role="navigation" aria-label="Bottom">
+      
+        <p>
+        «&#160;&#160;<a href="index.html">Table of Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="life.html">Life</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2020, Chen Chung-Shu.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.0.
+    </div>
+  </body>
+</html>

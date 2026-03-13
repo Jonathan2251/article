@@ -9,7 +9,8 @@ Table of Contents
 .. toctree::
    :maxdepth: 1
 
-   mipsfall
+   it
+   life
    
 
 Search this website
