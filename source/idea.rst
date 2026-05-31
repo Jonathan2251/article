@@ -62,7 +62,10 @@ A: 加盟的話那應該就是更容易經營了，只有加盟金貴些
 1. Copilot AI 提供無限時間的聊天，並能以文字或語音回答任何英
    文問題。
 
-2. 跟讀（Shadowing）：
+2. 跟讀（`Shadowing <https://www.youtube.com/watch?v=j0l8pQde4Wo>`_）：
+
+   **不要要求學生錄音並回放自己的聲音。  
+   大多數人都不喜歡聽到自己被錄下來的聲音，即使是母語也一樣。**
 
    根據我與你一起練習口說的經驗，我曾詢問：跟讀（例如跟著
    YouTube 英文故事影片重複）是否是適合我的英文學習方法。
@@ -121,7 +124,11 @@ women.
 1. Copilot AI provides unlimited time for chatting and answers any English
    question in text or voice.
 
-2. Shadowing:
+2. `Shadowing <https://www.youtube.com/watch?v=j0l8pQde4Wo>`_:
+
+   Do not ask students to record and listen to their own speech. 
+   Most people dislike hearing their own recorded voice, even in their
+   native language. 
 
    According to the English speaking practice I have done with you, I asked
    whether shadowing (repeating after a YouTube English story video) is a
