@@ -1,4 +1,4 @@
-.. _sec-idea:
+.. _sec-myfuture:
 
 Idea
 =====
